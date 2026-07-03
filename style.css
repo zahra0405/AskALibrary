@@ -1,0 +1,351 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+    body {
+      background: #fff;
+      color: #08213f;
+	margin:0;
+overflow-x:hidden;
+    }
+
+header{
+    height:90px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 70px;
+
+    background:#fff;
+
+    border-bottom:1px solid #edf1f5;
+
+    box-shadow:
+        0 10px 30px rgba(8,33,63,.08);
+
+    position:relative;
+    z-index:1000;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo-img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.logo-text h2 {
+    font-size: 25px;
+    color: #08213f;
+    margin-bottom: 0px;
+}
+
+.logo-text p {
+    color: #c47a21;
+    font-size: 15px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 14px;
+  color: #08213f;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+    nav a.active {
+      border-bottom: 3px solid #c47a21;
+      padding-bottom: 12px;
+      font-weight: bold;
+    }
+
+.login-btn{
+    background: #08213f;
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 28px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.login-btn i{
+    color: white;
+}
+.hero {
+    height: 560px;
+    display: flex;
+    align-items: center;
+    padding: 100px 80px 0;
+    background-image: url("images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    position: relative;
+    overflow: hidden;
+}
+
+    .hero-content {
+      width: 50%;
+      z-index: 2;
+margin-top: -150px;
+    }
+
+.hero h1{
+    font-size:70px;
+    font-weight:800;
+    letter-spacing:1px;
+    color:#08213f;
+}
+
+    .hero h3 {
+      font-size: 22px;
+      color: #c47a21;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      line-height: 1.5;
+      color: #102844;
+      max-width: 600px;
+      margin-bottom: 35px;
+margin-top: -10px;
+    }
+
+.services{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 40px 0;
+    max-width: 500px;
+}
+
+.service{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #08213f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.circle i{
+    color: white;
+    font-size: 25px;
+}
+
+.service p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.35;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+
+    .hero-boxes {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .status-box {
+      background: white;
+      padding: 15px 22px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+      width: 320px;
+    }
+
+    .status-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .green-dot {
+      display: inline-block;
+      width: 17px;
+      height: 15px;
+      background: #2dbb3f;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .status-box p {
+      font-size: 13px;
+      margin-left: 20px;
+      margin-bottom: 6px;
+    }
+
+.chat-card{
+    width:265px;
+    height:70px;
+    background:linear-gradient(135deg,#cf8d2b,#d89a3a);
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:0 22px;
+    color:white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    transition:.3s;
+}
+
+.chat-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 35px rgba(0,0,0,.22);
+}
+
+.chat-icon{
+    width:20px;
+    height:40px;
+    background:transparent;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    color:#cf8d2b;
+    flex-shrink:0;
+}
+
+.chat-text h4{
+    font-size:16px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.chat-text p{
+    font-size:15px;
+color: white;
+    margin-bottom:5px;
+
+}
+
+.bottom-info{
+    background: #08213f;
+    color: white;
+    display: grid;
+grid-template-columns: 1fr 1.1fr 1.1fr 1.2fr 1fr;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 55px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 5;
+	margin-bottom:0
+}
+
+.info-item{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    padding-right:55px;
+    position:relative;
+}
+
+.info-item::after{
+    content:"";
+    position:absolute;
+    right:15px;
+    top:15%;
+    width:2px;
+    height:70%;
+
+    background:rgba(255,255,255,.18);
+}
+
+    .info-icon {
+      font-size: 20px;
+      color: #c47a21;
+    }
+
+    .info-item h4 {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    .info-item p {
+      font-size: 12px;
+      line-height: 1.4;
+      color: #e6e6e6;
+    }
+
+.slogan {
+  font-size: 32px;
+  color: #d89b3c;
+  font-family: Georgia, serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+    @media (max-width: 900px) {
+      header {
+        padding: 20px;
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 40px 25px;
+        background-position: center;
+      }
+
+      .hero-content {
+        width: 100%;
+        background: rgba(255,255,255,0.85);
+        padding: 25px;
+        border-radius: 12px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .services, .hero-boxes, .bottom-info {
+        flex-direction: column;
+      }
+
+
+      .info-item {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.25);
+        padding-bottom: 20px;
+      }
+    }
